@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url('tyler-franta-iusJ25iYu1c-unsplash.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 70%;background: url('annie-spratt-r_m-JKJVto0-unsplash.jpg');
+    width: 40%;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text-con {
+    width: 100%;
+    height: 25%;
+    border-radius: 10px;
+}
+
+.text-con input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 2%;
+    font-size: 25px;
+}
+
+.button-con {
+    height: 70%;
+    width: 100%;
+    /* padding: 3%; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-holder {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-holder .submit {
+    padding: 3%;
+    width: 20%;
+    background: #000 !important;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.btn-holder input {
+    padding: 3%;
+    width: 20%;
+    background: #ddd;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-holder input::placeholder
+
+.btn-holder input:hover {
+    background: grey;
+    color: whitesmoke;
+}
+
+.btn-holder input:active {
+    font-size: 14px;
+    background: #bbb;
+}
+
+.key-sign {
+    padding: 3%;
+    width: 20%;
+    background: blue !important;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.key-sign:hover {
+    background: rgb(53, 17, 138) !important;
+    color: whitesmoke;
+}
+
+.key-sign:active {
+    font-size: 14px;
+    background: rgb(53, 17, 90) !important;
+}
+
+.reset {
+    background: orangered !important;
+    padding: 3%;
+    width: 20%;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.reset:hover {
+    background: orange !important;
+    color: whitesmoke;
+}
+
+.reset:active {
+    font-size: 14px;
+    background: yellow !important;
+    color: #000 !important;
+}
+
+.submit {
+    padding: 3%;
+    width: 20%;
+    background: #000 !important;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background: #003 !important;
+    color: whitesmoke;
+}
+
+.submit:active {
+    font-size: 14px;
+    background: #010 !important;
+}
+
+@media screen and (max-width:1024px){
+    form {
+        width: 60%;
+        height: 60%;
+    }
+
+    .text-con input{
+        font-size: 20px;
+    }
+
+    .btn-holder input{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px){
+    form {
+        height: 70%;
+        width: 70%;
+        padding: 5%;
+    }
+    .text-con {
+        height: 20%;
+    }
+}
