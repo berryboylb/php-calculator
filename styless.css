@@ -31,16 +31,30 @@ form {
     width: 100%;
     height: 25%;
     border-radius: 10px;
+    border: 1px solid black;
+    padding: 2%;
+    background: #fff;
 }
 
-.text-con input {
+.text-con .input-1 {
     width: 100%;
-    height: 100%;
+    height: 40% !important;
     outline: none;
-    border-radius: 10px;
-    border: 1px solid grey;
+    background: rgb(221, 221, 221);
+    border: none;
     padding: 2%;
-    font-size: 25px;
+    font-size: 18px;
+}
+
+.text-con .input-2 {
+    width: 100%;
+    height: 60% !important;
+    outline: none;
+    background: rgb(221, 221, 221);
+    border: none;
+    padding: 2%;
+    font-size: 22px;
+    text-align: right;
 }
 
 .button-con {
@@ -171,7 +185,11 @@ form {
         height: 60%;
     }
 
-    .text-con input{
+    .text-con .input-1{
+        font-size: 16px;
+    }
+
+    .text-con .input-1{
         font-size: 20px;
     }
 

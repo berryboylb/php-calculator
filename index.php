@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styless.css">
     <script src="jquery.js"></script>
 </head>
 <body>
@@ -12,7 +12,8 @@
     <div class="container">
         <form action="action.php" method="POST" class="myForm">
             <div class="text-con">
-                <input type="text" name="text-con" id="text-con" maxlength="16" >
+                <input type="text" class="input-1" name="text-con" id="text-con" maxlength="16" readonly>
+                <input type="text" class="input-2" name="ans-con" id="ans-con" maxlength="16" readonly>
             </div>
             <div class="button-con">
                 <div class="btn-holder">
@@ -68,8 +69,11 @@
 
                     success: function(response)
                     {
-                        $('#text-con').val(
-                            $('#text-con').val() + response)
+                        if($('#ans-con') != ""){
+                            $('#ans-con').val("")
+                            $('#ans-con').val(
+                            $('#ans-con').val() + response)
+                        }
                     }
                 });
                 return false;
