@@ -67,7 +67,7 @@ form {
     justify-content: space-between;
 }
 
-.btn-holder {
+.btn-holder, .btn-holderr {
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -99,14 +99,36 @@ form {
     font-weight: bold;
 }
 
-.btn-holder input::placeholder
+.btn-holderr input {
+    padding: 3%;
+    width: 15%;
+    background: #ddd;
+    color: #fff;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 
 .btn-holder input:hover {
     background: grey;
     color: whitesmoke;
 }
 
+.btn-holderr input:hover {
+    background: grey;
+    color: whitesmoke;
+}
+
 .btn-holder input:active {
+    font-size: 14px;
+    background: #bbb;
+}
+
+.btn-holderr input:active {
     font-size: 14px;
     background: #bbb;
 }
@@ -194,6 +216,10 @@ form {
     }
 
     .btn-holder input{
+        font-size: 16px;
+    }
+
+    .btn-holderr input{
         font-size: 16px;
     }
 }

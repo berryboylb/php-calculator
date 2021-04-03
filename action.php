@@ -3,9 +3,19 @@
 
         $string = $_POST['text-con'];
 
+        if(strlen($string) > 16){
+            echo "Math Error";
+        } else {
+
+            $result =   eval('return '. $string . ';');
+        }
+
+        // $result =   eval('return '. $string . ';');
+
+
         
-        $result =   eval('return '. $string . ';');
+       
         
 
-         echo $result;
+        //  echo $result;
     }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Php Calculator</title>
-    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="stylesss.css">
     <script src="jquery.js"></script>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="container">
         <form action="action.php" method="POST" class="myForm">
             <div class="text-con">
-                <input type="text" class="input-1" name="text-con" id="text-con" maxlength="16" readonly>
+                <input type="text" class="input-1" name="text-con" id="text-con"  readonly>
                 <input type="text" class="input-2" name="ans-con" id="ans-con" maxlength="16" readonly>
             </div>
             <div class="button-con">
@@ -34,9 +34,10 @@
                     <input type="button"  class="num" name = "num9" id="num9" value="9" readonly>
                     <input type="button" class="key-sign num" value="/" readonly>
                 </div>
-                <div class="btn-holder">
+                <div class="btn-holderr">
                     <input type="button" class="key-sign num" value="*" readonly>
                     <input type="button" class="num" name = "num0" id="num0" value="0" readonly>
+                    <input type="button" class="num" name = "num0" id="num0" value="." readonly>
                     <input type="reset" class="reset"  value="c" readonly>
                     <!-- <input type="submit" class="submit" value="="> -->
                     <button type="submit" class="submit" name = "submit">=</button>
