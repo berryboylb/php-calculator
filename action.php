@@ -17,5 +17,5 @@
        
         
 
-        //  echo $result;
+         echo $result;
     }
